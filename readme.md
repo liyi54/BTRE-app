@@ -1,0 +1,1 @@
+A simple Real Estate listing platform with admin functionalities
