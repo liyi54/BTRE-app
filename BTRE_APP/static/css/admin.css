@@ -1,25 +1,24 @@
-#header {
-  height: 50px;
+#header{
   background: #10284e;
-  color: #fff;
+  color: #ffffff;
+  height: 50px;
 }
 
-#branding h1 {
-  color: #fff;
+#branding h1{
+  color: #ffffff;
 }
 
-a:link,
-a:visited {
-  color:#10284e;
+a:link, a:visited{
+  color: #10284e;
 }
 
-div.breadcrumbs {
+div.breadcrumbs{
   background: #30caa0;
   color: #10284e;
 }
 
-div.breadcrumbs a {
-  color: #333;
+div.breadcrumbs a{
+  color: #10284e;
 }
 
 .module h2, .module caption, .inline-group h2 {
@@ -27,6 +26,7 @@ div.breadcrumbs a {
 }
 
 .button, input[type=submit], input[type=button], .submit-row input, a.button {
-  background: #10284e;
-  color: #fff;
+    background: #30caa0;
+    color: #fff;
 }
+

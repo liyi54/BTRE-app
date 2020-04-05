@@ -16,6 +16,8 @@ db.sqlite3-journal
 /media
 /static
 */settings.py
+/settings.py
+settings.py
 schema.txt
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
