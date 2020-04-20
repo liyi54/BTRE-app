@@ -24,7 +24,8 @@ def contact(request):
                            phone=phone, message=message)
         contact.save()
 
-        send_mail('INQUIRY ON '+listing, message, email, [realtor_email, 'adeliyiseyi@gmail.com'], fail_silently=False)
+        send_mail('INQUIRY ON '+listing, message + "\n For more information on this inquiry, please Login to the admin panel",
+                  email, [realtor_email, 'adeliyiseyi@gmail.com'], fail_silently=False)
 
         messages.success(request,'Your inquiry has been submitted. You will receive feedback from the Realtor')
 
