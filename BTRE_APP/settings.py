@@ -148,3 +148,8 @@ EMAIL_HOST_USER = 'adeliyiseyi@gmail.com'
 EMAIL_HOST_PASSWORD = 'Seyihacker8154@'
 EMAIL_USE_TLS = True
 # EMAIL_USE_SSL = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    passg
