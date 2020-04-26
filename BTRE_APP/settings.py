@@ -25,7 +25,7 @@ SECRET_KEY = 't9)iokhtd9+pg=dr=_2k336h2rrrzkbp4(fc$=+9e6a%(w_$y9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['031a771a.ngrok.io','127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'btredb',
         'USER': 'sadeliyi',
-        'PASSWORD': 'Seyihacker8154?',
+        'PASSWORD': 'abc123',
         'HOST': '127.0.0.1'
     }
 }
