@@ -2,7 +2,7 @@
 
 A Real Estate listing platform with an admin panel
 
-[Live URL] (http://bigtimerealestate.xyz)
+* [Live URL](http://bigtimerealestate.xyz)
 
 ## Getting Started
 
@@ -48,7 +48,7 @@ CREATE USER [username] WITH PASSWORD 'abc123!';
 ```
 GRANT ALL PRIVILEGES ON DATABASE [database name] TO [username];
 ```
-6.In the BTRE_APP/settings.py fie, update the following properties under DATABASES
+6. In the BTRE_APP/settings.py fie, update the following properties under DATABASES
 ```
 NAME: [database name]
 USER: [username]
@@ -74,11 +74,11 @@ python manage.py runserver
 
 ## Built With
 
-* [Django](https://docs.djangoproject.com/en/3.0/) - The web framework used
+* [Django](https://docs.djangoproject.com/en/3.0/) - Web framework
 * [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Web responsiveness and template
 * [jquery](https://api.jquery.com/) - JavaScript Library
 
 
 ## Acknowledgments
 
-* Brad Traversy
+* Brad Traversy(Django Dev to Deployment)
