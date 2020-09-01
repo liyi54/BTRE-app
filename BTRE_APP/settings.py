@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'BTRE_APP/static')
 ]
 
-# Media Folder for media files
+# Media Folder Settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
@@ -141,6 +141,13 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
+# Email
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'adeliyiseyi@gmail.com'
+EMAIL_HOST_PASSWORD = 'Seyihacker8154@'
 
 try:
     from .local_settings import *
