@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:5000 BTRE_APP.wsgi
+web: gunicorn BTRE_APP.wsgi
