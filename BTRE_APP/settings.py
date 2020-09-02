@@ -53,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'BTRE_APP.urls'
@@ -90,7 +91,6 @@ DATABASES = {
     }
 }
 
-# postgres://gzdrndnmduytmx:1bddf584e52d9487f2d5d8f1eaf012253be0b731944b65f4e0b53ca0e507637b@ec2-184-72-162-198.compute-1.amazonaws.com:5432/d4m4tilvt19v85
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
