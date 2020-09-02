@@ -25,7 +25,7 @@ SECRET_KEY = 't9)iokhtd9+pg=dr=_2k336h2rrrzkbp4(fc$=+9e6a%(w_$y9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'vast-harbor-23833.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'vast-harbor-23833.herokuapp.com']
 
 
 # Application definition
@@ -82,13 +82,15 @@ WSGI_APPLICATION = 'BTRE_APP.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
-        'USER': 'sadeliyi',
-        'PASSWORD': 'abc123',
-        'HOST': '127.0.0.1'
+        'NAME': 'd4m4tilvt19v85',
+        'USER': 'gzdrndnmduytmx',
+        'PASSWORD': '1bddf584e52d9487f2d5d8f1eaf012253be0b731944b65f4e0b53ca0e507637b',
+        'HOST': 'ec2-184-72-162-198.compute-1.amazonaws.com',
+        'PORT': 5432
     }
 }
 
+# postgres://gzdrndnmduytmx:1bddf584e52d9487f2d5d8f1eaf012253be0b731944b65f4e0b53ca0e507637b@ec2-184-72-162-198.compute-1.amazonaws.com:5432/d4m4tilvt19v85
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
