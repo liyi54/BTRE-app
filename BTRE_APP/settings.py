@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 't9)iokhtd9+pg=dr=_2k336h2rrrzkbp4(fc$=+9e6a%(w_$y9'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'vast-harbor-23833.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0']
 
 
 # Application definition
@@ -84,19 +84,19 @@ WSGI_APPLICATION = 'BTRE_APP.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd4m4tilvt19v85',
-        'USER': 'gzdrndnmduytmx',
-        'PASSWORD': '1bddf584e52d9487f2d5d8f1eaf012253be0b731944b65f4e0b53ca0e507637b',
-        'HOST': 'ec2-184-72-162-198.compute-1.amazonaws.com',
-        'PORT': 5432
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT':
     }
 }
 
 # Cloudinary
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'haen9qjyg',
-    'API_KEY': '594261868121625',
-    'API_SECRET': 'xdrYxL-RQ7tLzRhh93hBJU0T3lE',
+    'CLOUD_NAME': '',
+    'API_KEY': '',
+    'API_SECRET': '',
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
@@ -156,11 +156,11 @@ MESSAGE_TAGS = {
 
 # Email
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'adeliyiseyi@gmail.com'
-EMAIL_HOST_PASSWORD = 'Seyihacker8154@'
+EMAIL_HOST = ''
+EMAIL_USE_TLS =
+EMAIL_PORT =
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 try:
     from .local_settings import *

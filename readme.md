@@ -6,19 +6,28 @@ A Real Estate listing platform with an admin panel
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on a remote heroku server.
 
 ### Prerequisites
 
 ```
 asgiref==3.2.5
+certifi==2020.6.20
+chardet==3.0.4
+cloudinary==1.22.0
 Django==3.0.4
+django-cloudinary-storage==0.3.0
+gunicorn==20.0.4
+idna==2.10
 Pillow==7.0.0
 psycopg2==2.8.4
 psycopg2-binary==2.8.4
 pytz==2019.3
+requests==2.24.0
+six==1.15.0
 sqlparse==0.3.1
-psql==11.5
+urllib3==1.25.10
+whitenoise==5.2.0
 
 ```
 A requirements.txt file has been created, use the following command to install these packages
@@ -36,40 +45,28 @@ python3 -m venv ./venv
 ```
 source venv/bin/activate
 ```
-3. Create a database
-```
-CREATE DATABASE [database name];
-```
-4. Create a user
-```
-CREATE USER [username] WITH PASSWORD 'abc123!';
-```
-5. Grant the user access to the database
-```
-GRANT ALL PRIVILEGES ON DATABASE [database name] TO [username];
-```
-6. In the BTRE_APP/settings.py fie, update the following properties under DATABASES
-```
-NAME: [database name]
-USER: [username]
-PASSWORD: [password]
-```
-7. Run Migrations with the following commands
+3. Create a heroku app
+
+4. Install cloudinary and postgresdb as add-ons
+
+5. Edit and update the settings.py file
+
+6. Run Migrations with the following commands
 ```
 # python manage.py makemigrations
 # python manage.py migrate
 ```
-8. Create a superuser to access your admin panel
-```
-python manage.py createsuperuser
-```
-9. Create static files
+7. Create static files
 ```
 python manage.py collectstatic
 ```
-10. Run the server
+8. Push to the heroku server
 ```
-python manage.py runserver
+git push heroku master
+```
+9. Create a superuser to access your admin panel
+```
+heroku python manage.py createsuperuser
 ```
 
 ## Built With
