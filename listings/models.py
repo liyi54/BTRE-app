@@ -20,12 +20,12 @@ class Listing(models.Model):
     sqft = models.IntegerField()
     lot_size = models.DecimalField(max_digits=4, decimal_places=1)
     photo_main = CloudinaryField('image')
-    photo_1 = CloudinaryField('image')
-    photo_2 = CloudinaryField('image')
-    photo_3 = CloudinaryField('image')
-    photo_4 = CloudinaryField('image')
-    photo_5 = CloudinaryField('image')
-    photo_6 = CloudinaryField('image')
+    photo_1 = CloudinaryField('image', blank=True)
+    photo_2 = CloudinaryField('image', blank=True)
+    photo_3 = CloudinaryField('image', blank=True)
+    photo_4 = CloudinaryField('image', blank=True)
+    photo_5 = CloudinaryField('image', blank=True)
+    photo_6 = CloudinaryField('image', blank=True)
     is_published = models.BooleanField(default=True)
 
     def __str__(self):
