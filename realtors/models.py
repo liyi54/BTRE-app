@@ -1,9 +1,10 @@
 from django.db import models
 from django.utils import timezone
+from cloudinary.models import CloudinaryField
 
 class Realtor(models.Model):
     name = models.CharField(max_length=50)
-    photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    photo = CloudinaryField('image')
     description = models.TextField(blank=True)
     email = models.EmailField()
     phone = models.CharField(max_length=13)

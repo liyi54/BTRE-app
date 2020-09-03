@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -91,6 +92,16 @@ DATABASES = {
     }
 }
 
+# Cloudinary
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'haen9qjyg',
+    'API_KEY': '594261868121625',
+    'API_SECRET': 'xdrYxL-RQ7tLzRhh93hBJU0T3lE',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -134,9 +145,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'BTRE_APP/static')
 ]
 
-# Media Folder Settings
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+# # Media Folder Settings
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
 
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
