@@ -2,7 +2,7 @@
 
 A Real Estate listing platform with an admin panel
 
-* [Live URL](http://bigtimerealestate.xyz)
+* [Live URL](https://vast-harbor-23833.herokuapp.com/)
 
 ## Getting Started
 
